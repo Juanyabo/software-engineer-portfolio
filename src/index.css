@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+  --system-color-deepNavy: #0a0e15;
+  --system-color-softWhite: #f3f4f6;
+  --system-color-coolGray: #9ca3af;
+  --system-color-charcoalGray: #252a31;
+  --system-font-family-lexend: "Lexend", sans-serif;
+}
+
+body {
+  --color-backgroundColor: var(--system-color-deepNavy);
+    background-color: var(--color-backgroundColor);
+}
+
+.container {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 120px;
+  box-sizing: border-box;
+}

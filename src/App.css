@@ -1,0 +1,25 @@
+.app {
+  --color-primaryText: var(--system-color-softWhite);
+  --color-secondaryText: var(--system-color-coolGray);
+  --font-family-primary: var(--system-font-family-lexend);
+}
+
+.eyebrow {
+    margin: 0 0 24px;
+    font-family: var(--font-family-primary);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: var(--color-secondaryText);
+}
+
+h1 {
+    margin: 0;
+    font-family: var(--font-family-primary);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.9px;
+    color: var(--color-primaryText);
+}
