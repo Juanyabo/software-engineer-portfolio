@@ -1,0 +1,29 @@
+.portfolio-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-project-media {
+    min-width: 0;
+}
+
+.portfolio-project-content {
+    min-width: 0;
+}
+
+.portfolio-heading {
+    margin: 0;
+}
+
+.portfolio-details {
+    margin-top: 24px;
+}
+
+.portfolio-description {
+    margin: 0;
+    font-family: var(--font-family-primary);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--color-secondaryText);
+}
