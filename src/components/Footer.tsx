@@ -23,7 +23,7 @@ function Footer() {
                     <p>juan.gianella13@gmail.com</p>
                 </a>
             </div>
-            <div className="footer-brand-nav">
+            <div className="footer-brand-nav divider">
                 <p className="footer-brand">Juan Gianella Blanco</p>
 
                 <nav className="eyebrow footer-navigation">
