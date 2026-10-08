@@ -40,6 +40,11 @@ const personalProjects = [
         name: "Untilted",
         focus: "XR",
         technologies: ["Unity", "C#", "Java"]
+    },
+    {
+        name: "Portfolio",
+        focus: "Web",
+        technologies: ["React", "TypeScript", "CSS", "ESLint"]
     }
 ];
 
