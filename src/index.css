@@ -14,10 +14,36 @@ body {
     background-color: var(--color-backgroundColor);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
   width: 100%;
   max-width: 1380px;
   margin: 0 auto;
   padding: 0 120px;
   box-sizing: border-box;
+}
+
+.brand {
+    font-family: var(--font-family-primary);
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--color-primaryText);
+}
+
+.navigation {
+    display: flex;
+    gap: 40px;
+}
+
+.navigation a {
+    color: inherit;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.hover-element:hover {
+    color: var(--hover-element-color, var(--system-color-softWhite));
 }
