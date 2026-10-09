@@ -80,8 +80,8 @@
     transition: transform 0.3s ease;
 }
 
-.portfolio-project-link:hover {
-    color: var(--system-color-cyan);
+.portfolio-project-link {
+    --hover-element-color: var(--system-color-cyan);
 }
 
 .portfolio-project-link:hover .portfolio-project-arrow {

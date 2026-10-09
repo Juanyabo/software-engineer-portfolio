@@ -44,7 +44,7 @@ const personalProjects = [
     {
         name: "Portfolio",
         focus: "Web",
-        technologies: ["React", "TypeScript", "CSS", "ESLint"]
+        technologies: ["React", "TypeScript", "HTML" ,"CSS", "ESLint"]
     }
 ];
 
@@ -62,13 +62,13 @@ const academicProjects = [
     {
         name: "Thesis",
         focus: "Engineering",
-        technologies: ["Python", "Tkinter" , "Matplotlib", "Pandas", "NumPy", "Linear Algebra"]
+        technologies: ["Python", "Tkinter" , "Matplotlib", "Pandas", "NumPy"]
     }
 ];
 
 function Portfolio() {
     return (
-        <section className="portfolio">
+        <section id="portfolio" className="portfolio">
             <div className="container">
                 <p className="eyebrow">My Work</p>
             </div>
@@ -118,7 +118,7 @@ function Portfolio() {
                             {project.credits}
                         </p>
 
-                        <a href={project.link} className="portfolio-project-link">
+                        <a href={project.link} className="portfolio-project-link hover-element">
                             Learn more <span className="portfolio-project-arrow">→</span>
                         </a>
                     </div>

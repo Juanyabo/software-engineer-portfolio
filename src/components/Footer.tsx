@@ -4,7 +4,7 @@ import { faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer id="contact" className="footer">
         <div className="container">
             <div className="footer-contact">
                 <a className="footer-contact-item" href="https://www.google.com/maps/search/madrid%2C%2BEspa%C3%B1a/?hl=es" rel="noopener noreferrer">   
@@ -24,17 +24,17 @@ function Footer() {
                 </a>
             </div>
             <div className="footer-brand-nav divider">
-                <p className="footer-brand">Juan Gianella Blanco</p>
+                <p className="brand footer-brand">Juan Gianella Blanco</p>
 
-                <nav className="eyebrow footer-navigation">
-                <a href="#about">About</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="https://www.linkedin.com/in/juan-gianella" target="_blank" rel="noopener noreferrer">
-                    LinkedIn
-                </a>
-                <a href="https://github.com/Juanyabo" target="_blank" rel="noopener noreferrer">
-                    GitHub
-                </a>
+                <nav className="eyebrow navigation footer-navigation">
+                    <a className="hover-element" href="#about">About</a>
+                    <a className="hover-element" href="#portfolio">Portfolio</a>
+                    <a className="hover-element" href="https://www.linkedin.com/in/juan-gianella" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+                    <a className="hover-element" href="https://github.com/Juanyabo" target="_blank" rel="noopener noreferrer">
+                        GitHub
+                    </a>
                 </nav>
             </div>
             <div className="eyebrow footer-bottom">

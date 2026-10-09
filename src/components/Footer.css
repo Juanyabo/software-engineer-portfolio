@@ -44,15 +44,6 @@
 
 .footer-brand {
   margin: 0;
-  font-family: var(--font-family-primary);
-  font-size: 26px;
-  font-weight: 600;
-  color: var(--color-primaryText);
-}
-
-.footer-navigation {
-  display: flex;
-  gap: 40px;
 }
 
 .footer-navigation a {
