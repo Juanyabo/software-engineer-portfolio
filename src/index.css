@@ -43,6 +43,10 @@ html {
     text-decoration: none;
 }
 
+.hover-element:hover {
+    color: var(--hover-element-color, var(--system-color-softWhite));
+}
+
 .brand {
     font-family: var(--font-family-primary);
     font-size: 26px;
@@ -57,30 +61,48 @@ html {
     color: var(--color-secondaryText);
 }
 
-.eyebrow {
-    margin: 0 0 24px;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
-}
-
-.hover-element:hover {
-    color: var(--hover-element-color, var(--system-color-softWhite));
-}
-
-.heading-xl {
-    margin: 0;
-    font-size: 48px;
-}
-
-.text-cyan {
-    color: var(--system-color-cyan);
-}
-
-.description {
-    margin: 24px 0;
+/*.description {
     font-family: var(--font-family-primary);
     font-size: 18px;
     font-weight: 500;
     line-height: 1.6;
     color: var(--color-secondaryText);
+}*/
+
+.eyebrow {
+    margin-bottom: 24px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4 {
+    margin: 0 0 24px;
+    font-family: var(--font-family-primary);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.9px;
+    color: var(--color-primaryText);
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+h4 {
+    margin: 0 0 4px;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+/*.h1 {
+    margin: 0;
+    font-size: 36px;
+}*/
+
+.divider {
+    border-bottom: 1px solid var(--system-color-charcoalGray);
 }
