@@ -5,7 +5,7 @@ function Navbar() {
         <header className="navbar">
             <div className="container navbar-content">
                 <a className="brand navbar-brand" href="#">
-                    Juan Gianella Blanco
+                    Juan Gianella
                 </a>
 
                 <nav className="eyebrow navigation navbar-navigation">

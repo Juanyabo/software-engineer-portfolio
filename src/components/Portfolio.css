@@ -3,16 +3,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 72px;
     align-items: start;
-    margin-bottom: 128px;
-}
-
-.portfolio-intro-heading {
-    margin: 0;
-    font-size: 48px;
+    margin-bottom: 152px;
 }
 
 .portfolio-intro {
-    margin-bottom: 96px;
+    margin-bottom: 114px;
 }
 
 .portfolio-project-media {
@@ -52,17 +47,6 @@
     margin-top: 24px;
 }
 
-.portfolio-description {
-    margin: 0;
-    font-family: var(--font-family-primary);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.6;
-    color: var(--color-secondaryText);
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-
 .portfolio-project-link {
     display: inline-block;
     font-family: var(--font-family-primary);
@@ -93,7 +77,7 @@
 }
 
 .portfolio-project-category {
-    margin-top: 96px;
+    margin-top: 114px;
 }
 
 .portfolio-table-header,

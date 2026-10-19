@@ -24,7 +24,7 @@ function Footer() {
                 </a>
             </div>
             <div className="footer-brand-nav divider">
-                <p className="brand footer-brand">Juan Gianella Blanco</p>
+                <p className="brand footer-brand">Juan Gianella</p>
 
                 <nav className="eyebrow navigation footer-navigation">
                     <a className="hover-element" href="#about">About</a>
@@ -38,7 +38,7 @@ function Footer() {
                 </nav>
             </div>
             <div className="eyebrow footer-bottom">
-                <p>© 2026 Juan Gianella Blanco. All rights reserved.</p>
+                <p>© 2026 Juan Gianella. All rights reserved.</p>
             </div>
         </div>
     </footer>

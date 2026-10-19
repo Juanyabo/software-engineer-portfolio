@@ -47,3 +47,21 @@ html {
 .hover-element:hover {
     color: var(--hover-element-color, var(--system-color-softWhite));
 }
+
+.heading-xl {
+    margin: 0;
+    font-size: 48px;
+}
+
+.text-cyan {
+    color: var(--system-color-cyan);
+}
+
+.description {
+    margin: 24px 0;
+    font-family: var(--font-family-primary);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--color-secondaryText);
+}

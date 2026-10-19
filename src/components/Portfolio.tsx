@@ -76,11 +76,11 @@ function Portfolio() {
             <div className="container">
                 <div className="portfolio-project portfolio-intro">
                     <div className="portfolio-project-media">
-                        <h1 className="portfolio-intro-heading">
+                        <h1 className="heading-xl">
                             Driven by challenges, engineering ideas into reality
                         </h1>
                         <div className="portfolio-details">
-                            <p className="portfolio-description">
+                            <p className="description">
                                 From contributing to an award-winning game to building XR applications,
                                 I’ve worked across technologies to turn ideas into software that reaches users.
                             </p>
@@ -112,7 +112,7 @@ function Portfolio() {
                             {project.title}
                         </h1>
 
-                        <p className="portfolio-description">
+                        <p className="description">
                             {project.description}
                             <br /><br />
                             {project.credits}
