@@ -1,16 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 :root {
-  --system-color-deepNavy: #0a0e15;
-  --system-color-softWhite: #f3f4f6;
-  --system-color-coolGray: #9ca3af;
-  --system-color-charcoalGray: #252a31;
-  --system-color-cyan: #34d2fe;
-  --system-font-family-lexend: "Lexend", sans-serif;
+    --system-color-deepNavy: #0a0e15;
+    --system-color-softWhite: #f3f4f6;
+    --system-color-coolGray: #9ca3af;
+    --system-color-white6: rgba(255, 255, 255, 0.06);
+    --system-color-darkBlueGray: #30394a;
+    --system-color-slateGray: #626b7a;
+    --system-color-charcoalGray: #252a31;
+    --system-color-cyan: #34d2fe;
+    --system-font-family-lexend: "Lexend", sans-serif;
 }
 
 body {
-  --color-backgroundColor: var(--system-color-deepNavy);
+    --color-backgroundColor: var(--system-color-deepNavy);
+    --color-primaryText: var(--system-color-softWhite);
+    --color-secondaryText: var(--system-color-coolGray);
+
+    --font-family-primary: var(--system-font-family-lexend);
+
     background-color: var(--color-backgroundColor);
 }
 
@@ -19,11 +27,20 @@ html {
 }
 
 .container {
-  width: 100%;
-  max-width: 1380px;
-  margin: 0 auto;
-  padding: 0 120px;
-  box-sizing: border-box;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 136px;
+    box-sizing: border-box;
+}
+
+.horizontal-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.horizontal-menu a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .brand {
@@ -33,15 +50,17 @@ html {
     color: var(--color-primaryText);
 }
 
-.navigation {
-    display: flex;
-    gap: 40px;
+.text {
+    font-family: var(--font-family-primary);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-secondaryText);
 }
 
-.navigation a {
-    color: inherit;
-    text-decoration: none;
-    text-transform: none;
+.eyebrow {
+    margin: 0 0 24px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
 }
 
 .hover-element:hover {

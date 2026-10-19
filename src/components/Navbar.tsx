@@ -8,7 +8,7 @@ function Navbar() {
                     Juan Gianella
                 </a>
 
-                <nav className="eyebrow navigation navbar-navigation">
+                <nav className="text horizontal-menu">
                     <a className="hover-element" href="#about">
                         About
                     </a>
@@ -17,7 +17,7 @@ function Navbar() {
                     </a>
                 </nav>
 
-                <a className="eyebrow navbar-contact" href="#contact">
+                <a className="text navbar-contact" href="#contact">
                     Contact
                 </a>
             </div>

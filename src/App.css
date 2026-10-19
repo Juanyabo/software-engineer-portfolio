@@ -1,18 +1,6 @@
-.app {
-  --color-primaryText: var(--system-color-softWhite);
-  --color-secondaryText: var(--system-color-coolGray);
-  --font-family-primary: var(--system-font-family-lexend);
-}
-
-.eyebrow {
-    margin: 0 0 24px;
-    font-family: var(--font-family-primary);
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
-    color: var(--color-secondaryText);
-}
+/*.app {
+  
+}*/
 
 .divider {
     border-bottom: 1px solid var(--system-color-charcoalGray);
