@@ -41,9 +41,9 @@ function Portfolio() {
                             {project.meta}
                         </p>
 
-                        <h1>
+                        <h2>
                             {project.title}
-                        </h1>
+                        </h2>
 
                         <p className="text portfolio-description">
                             {project.description}

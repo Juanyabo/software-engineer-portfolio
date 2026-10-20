@@ -61,14 +61,6 @@ html {
     color: var(--color-secondaryText);
 }
 
-/*.description {
-    font-family: var(--font-family-primary);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.6;
-    color: var(--color-secondaryText);
-}*/
-
 .eyebrow {
     margin-bottom: 24px;
     letter-spacing: 2.8px;
@@ -85,6 +77,10 @@ h1, h2, h3, h4 {
     color: var(--color-primaryText);
 }
 
+h2 {
+    font-size: 36px;
+}
+
 h3 {
     font-size: 32px;
     line-height: 1.2;
@@ -97,11 +93,6 @@ h4 {
     line-height: normal;
     letter-spacing: normal;
 }
-
-/*.h1 {
-    margin: 0;
-    font-size: 36px;
-}*/
 
 .divider {
     border-bottom: 1px solid var(--system-color-charcoalGray);

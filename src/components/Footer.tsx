@@ -12,7 +12,7 @@ function Footer() {
                         icon={faLocationDot}
                         className="footer-contact-icon"
                     />
-                    <p>Madrid, Spain</p>
+                    <p className="text">Madrid, Spain</p>
                 </a>
         
                 <a className="footer-contact-item" href="mailto:juan.gianella13@gmail.com">
@@ -20,13 +20,13 @@ function Footer() {
                         icon={faEnvelope}
                         className="footer-contact-icon"
                     />
-                    <p>juan.gianella13@gmail.com</p>
+                    <p className="text">juan.gianella13@gmail.com</p>
                 </a>
             </div>
             <div className="footer-brand-nav divider">
                 <p className="brand footer-brand">Juan Gianella</p>
 
-                <nav className="eyebrow navigation footer-navigation">
+                <nav className="text eyebrow horizontal-menu footer-navigation">
                     <a className="hover-element" href="#about">About</a>
                     <a className="hover-element" href="#portfolio">Portfolio</a>
                     <a className="hover-element" href="https://www.linkedin.com/in/juan-gianella" target="_blank" rel="noopener noreferrer">
@@ -37,7 +37,7 @@ function Footer() {
                     </a>
                 </nav>
             </div>
-            <div className="eyebrow footer-bottom">
+            <div className="text eyebrow footer-bottom">
                 <p>© 2026 Juan Gianella. All rights reserved.</p>
             </div>
         </div>
