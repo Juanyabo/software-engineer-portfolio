@@ -113,6 +113,9 @@ function About() {
                                     alt={`${work.company} logo`}
                                 />
                             </a>
+                            <p className="text about-timeline-date">
+                                {work.date}
+                            </p>
                         </div>
                     ))}
                 </div>
