@@ -299,6 +299,7 @@
     background: var(--card-border);
     transition: transform 0.1s ease-out;
     transform-style: preserve-3d;
+    box-shadow: 0 0 30px 4px color-mix(in srgb, var(--card-background) 60%, transparent);
 }
 
 .skill-card-inner {
@@ -322,7 +323,6 @@
 
 .skill-card-name {
     margin: 0;
-    font-size: 12px;
     font-weight: 600;
     color: var(--color-primaryText);
     text-align: center;
