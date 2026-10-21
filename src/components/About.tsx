@@ -5,6 +5,33 @@ import { faSteam, faAppStore, faGooglePlay } from "@fortawesome/free-brands-svg-
 import { useTypewriter } from "../hooks/useTypewriter";
 import { useTimelineReveal } from "../hooks/useTimelineReveal";
 import { workExperiences } from "../data/workExperiences";
+import type { CSSProperties } from "react";
+import { skills, type Skill } from "../data/skills";
+import { useCardTilt } from "../hooks/useCardTilt";
+
+function SkillCard({ name, logo, border, background }: Skill) {
+    const { rotation, handleMouseMove, handleMouseLeave } = useCardTilt();
+
+    return (
+        <div className="skill-card-wrapper">
+            <div
+                className="skill-card"
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
+                style={{
+                    "--card-border": border,
+                    "--card-background": background,
+                    transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)`
+                } as CSSProperties}
+            >
+                <div className="skill-card-inner">
+                    <img src={logo} alt={name} />
+                    <p className="text skill-card-name">{name}</p>
+                </div>
+            </div>
+        </div>
+    );
+}
 
 function About() {
     const text = useTypewriter();
@@ -77,7 +104,7 @@ function About() {
             </div>
 
             
-            <div className="container about-section about-backstory">
+            <div className="container about-section">
                 <p className="text eyebrow about-backstory-title">
                     My Backstory
                 </p>
@@ -117,6 +144,18 @@ function About() {
                                 {work.date}
                             </p>
                         </div>
+                    ))}
+                </div>
+            </div>
+
+            <div className="container about-section">
+                <p className="text eyebrow about-Skills-title">
+                    My Skills
+                </p>
+
+                <div className="skill-cards">
+                    {skills.map((skill) => (
+                        <SkillCard key={skill.name} {...skill} />
                     ))}
                 </div>
             </div>
