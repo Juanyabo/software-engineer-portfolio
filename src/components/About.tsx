@@ -6,7 +6,7 @@ import { useTypewriter } from "../hooks/useTypewriter";
 import { useTimelineReveal } from "../hooks/useTimelineReveal";
 import { workExperiences } from "../data/workExperiences";
 import type { CSSProperties } from "react";
-import { skills, type Skill } from "../data/skills";
+import { skills, skillCategories, type Skill } from "../data/skills";
 import { useCardTilt } from "../hooks/useCardTilt";
 
 function SkillCard({ name, logo, border, background }: Skill) {
@@ -113,9 +113,9 @@ function About() {
                     {workExperiences.map((work) => (
                         <div className="about-timeline-item" key={work.title}>
                             <div className="about-timeline-content">
-                                <h4>
+                                <h5>
                                     {work.title}
-                                </h4>
+                                </h5>
 
                                 <p className="text skills">
                                     {work.technologies}
@@ -153,9 +153,21 @@ function About() {
                     My Skills
                 </p>
 
-                <div className="skill-cards">
-                    {skills.map((skill) => (
-                        <SkillCard key={skill.name} {...skill} />
+                <div className="skill-categories">
+                    {skillCategories.map((category) => (
+                        <div className="skill-category" key={category}>
+                            <h4 className="skill-category-title">
+                                {category}
+                            </h4>
+
+                            <div className="skill-cards">
+                                {skills
+                                    .filter((skill) => skill.category === category)
+                                    .map((skill) => (
+                                        <SkillCard key={skill.name} {...skill} />
+                                    ))}
+                            </div>
+                        </div>
                     ))}
                 </div>
             </div>

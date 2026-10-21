@@ -253,11 +253,30 @@
 
 .about-Skills-title {
     text-align: center;
+    margin-bottom: 48px;
+}
+
+.skill-categories {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 64px 24px;
+}
+
+.skill-category {
+    min-width: 0;
+}
+
+.skill-category:first-child {
+    grid-column: 1 / -1;
+}
+
+.skill-category-title {
+    text-align: center;
 }
 
 .skill-cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 120px);
     justify-content: center;
     gap: 24px;
 }
