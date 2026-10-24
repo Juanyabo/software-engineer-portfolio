@@ -60,3 +60,24 @@
     letter-spacing: normal;
     text-transform: none;
 }
+
+@media (max-width: 768px) {
+    .footer-contact {
+      gap: 96px;
+    }
+}
+
+@media (max-width: 440px) {
+  .footer-contact-item .text {
+        display: none;
+    }
+
+  .footer-brand {
+        display: none;
+    }
+
+    .footer-brand-nav {
+        justify-content: center;
+    }
+  
+}
