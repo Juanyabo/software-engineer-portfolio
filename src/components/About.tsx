@@ -129,6 +129,10 @@ function About() {
                                         <li key={index}>{item}</li>
                                     ))}
                                 </ul>
+
+                                <p className="text about-timeline-date-mobile">
+                                    {work.date}
+                                </p>
                             </div>
 
                             <a
