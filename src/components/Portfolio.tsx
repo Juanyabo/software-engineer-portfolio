@@ -94,7 +94,13 @@ function Portfolio() {
                         {category.projects.map((project) => (
                             <div className="portfolio-table-row divider" key={project.name}>
                                 <span className="text portfolio-table-name">
-                                    {project.name}
+                                    {project.link ? (
+                                        <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                            {project.name}
+                                        </a>
+                                    ) : (
+                                        project.name
+                                    )}
                                 </span>
 
                                 <span className="text portfolio-table-focus">

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrophy, faGlasses } from "@fortawesome/free-solid-svg-icons";
 import { faSteam, faAppStore, faGooglePlay } from "@fortawesome/free-brands-svg-icons";
 import { useTypewriter } from "../hooks/useTypewriter";
+/*import heroImage from "../assets/Hero.png"*/
 import { useTimelineReveal } from "../hooks/useTimelineReveal";
 import { workExperiences } from "../data/workExperiences";
 import type { CSSProperties } from "react";
@@ -100,7 +101,7 @@ function About() {
                     </div>
 
                     <div className="about-content-right">
-                        {/* Profile image */}
+                        {/* <img src={heroImage} alt="Profile" className="about-profile-image" /> */}
                     </div>
                 </div>
             </div>

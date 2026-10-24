@@ -83,6 +83,11 @@
     color: var(--color-primaryText);
 }
 
+.portfolio-table-name a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .portfolio-table-focus {
     color: var(--system-color-cyan);
 }

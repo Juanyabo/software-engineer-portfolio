@@ -33,17 +33,20 @@ export const personalProjects = [
     {
         name: "RPG Mechanics",
         focus: "Video Game",
-        technologies: ["Unreal Engine 5", "GAS", "UMG" ,"C++", "Blueprints"]
+        technologies: ["Unreal Engine 5", "GAS", "UMG" ,"C++", "Blueprints"],
+        link: ""
     },
     {
         name: "Untilted",
         focus: "XR",
-        technologies: ["Unity", "C#", "Java"]
+        technologies: ["Unity", "C#", "Java"],
+        link: ""
     },
     {
         name: "Portfolio",
         focus: "Web",
-        technologies: ["React", "TypeScript", "HTML" ,"CSS", "ESLint"]
+        technologies: ["React", "TypeScript", "HTML" ,"CSS", "ESLint"],
+        link: "https://github.com/Juanyabo/software-engineer-portfolio"
     }
 ];
 
@@ -51,16 +54,19 @@ export const academicProjects = [
     {
         name: "Talent Tree",
         focus: "UI",
-        technologies: ["Unreal Engine 5", "UMG", "C++", "Blueprints"]
+        technologies: ["Unreal Engine 5", "UMG", "C++", "Blueprints"],
+        link: ""
     },
     {
         name: "Physics Sandbox",
         focus: "Physics",
-        technologies: ["Unreal Engine 5", "Chaos Physics", "UMG" ,"C++", "Blueprints"]
+        technologies: ["Unreal Engine 5", "Chaos Physics", "UMG" ,"C++", "Blueprints"],
+        link: ""
     },
     {
         name: "Thesis",
         focus: "Engineering",
-        technologies: ["Python", "Tkinter" , "Matplotlib", "Pandas", "NumPy"]
+        technologies: ["Python", "Tkinter" , "Matplotlib", "Pandas", "NumPy"],
+        link: ""
     }
 ];

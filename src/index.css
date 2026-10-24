@@ -101,3 +101,29 @@ h5 {
 .divider {
     border-bottom: 1px solid var(--system-color-charcoalGray);
 }
+
+@media (max-width: 1032px) {
+    .container
+    {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 440px) {
+    .container
+    {
+        padding: 0 20px;
+    }
+
+    .brand{
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}
