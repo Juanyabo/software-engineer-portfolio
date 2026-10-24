@@ -419,10 +419,20 @@
         display: block;
         margin: 16px 0 0;
     }
+
+    /*Skills*/
+    .skill-categories {
+        grid-template-columns: 1fr;
+        row-gap: 64px;
+    }
+
+    .skill-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 440px) {
-    
     .about-content-right {
         width: fit-content;
     }
