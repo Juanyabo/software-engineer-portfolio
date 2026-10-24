@@ -5,7 +5,7 @@ function Portfolio() {
     return (
         <section id="portfolio" className="portfolio">
             <div className="container">
-                <p className="text eyebrow">My Work</p>
+                <p className="text eyebrow portfolio-work-title">My Work</p>
             </div>
             
             <div className="container">

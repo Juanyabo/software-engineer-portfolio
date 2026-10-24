@@ -423,7 +423,6 @@
     /*Skills*/
     .skill-categories {
         grid-template-columns: 1fr;
-        row-gap: 64px;
     }
 
     .skill-cards {

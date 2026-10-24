@@ -91,3 +91,48 @@
 .portfolio-table-focus {
     color: var(--system-color-cyan);
 }
+
+@media (max-width: 1032px) {
+    .portfolio-project {
+        margin-bottom: 56px;
+    }
+
+    .portfolio-project-category {
+        margin-top: 56px;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-project {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 96px;
+    }
+
+    .portfolio-work-title {
+        text-align: center;
+    }
+    
+    .portfolio-project-category {
+        margin-top: 96px;
+    }
+
+    .portfolio-project-media {
+        order: -1;
+        width: 80%;
+        justify-self: center;
+    }
+
+    .portfolio-table-header,
+    .portfolio-table-row {
+        grid-template-columns: 1.2fr 1fr 1.8fr;
+        column-gap: 12px;
+    }
+}
+
+@media (max-width: 440px) {
+    .portfolio-project-media {
+        width: 100%;
+        justify-self: normal;
+    }
+}
