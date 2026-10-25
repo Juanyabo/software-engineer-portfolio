@@ -4,25 +4,44 @@ import './Navbar.css'
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
     const closeMenu = () => setMenuOpen(false)
+    const homeUrl = import.meta.env.BASE_URL;
+    const navigateToSection = (id: string) => {
+        if (window.location.pathname !== homeUrl) {
+            sessionStorage.setItem("targetSection", id);
+        }
+    };
 
     return (
         <header className="navbar">
             <div className="container navbar-content">
 
-                <a className="brand navbar-brand" href="#">
+                <a className="brand navbar-brand" href={homeUrl}>
                     Juan Gianella
                 </a>
 
                 <nav className="text horizontal-menu navbar-links">
-                    <a className="hover-element" href="#about">
+                    <a
+                        className="hover-element"
+                        href={`${homeUrl}#about`}
+                        onClick={() => navigateToSection("about")}
+                    >
                         About
                     </a>
-                    <a className="hover-element" href="#portfolio">
+
+                    <a
+                        className="hover-element"
+                        href={`${homeUrl}#portfolio`}
+                        onClick={() => navigateToSection("portfolio")}
+                    >
                         Portfolio
                     </a>
                 </nav>
 
-                <a className="text navbar-contact" href="#contact">
+                <a
+                    className="text navbar-contact"
+                    href={`${homeUrl}#contact`}
+                    onClick={() => navigateToSection("contact")}
+                >
                     Contact
                 </a>
 
@@ -46,13 +65,36 @@ function Navbar() {
                 aria-label="Mobile navigation"
                 inert={!menuOpen}
             >
-                <a className="hover-element" href="#about" onClick={closeMenu}>
+                <a
+                    className="hover-element"
+                    href={`${homeUrl}#about`}
+                    onClick={() => {
+                        navigateToSection("about");
+                        closeMenu();
+                    }}
+                >
                     About
                 </a>
-                <a className="hover-element" href="#portfolio" onClick={closeMenu}>
+
+                <a
+                    className="hover-element"
+                    href={`${homeUrl}#portfolio`}
+                    onClick={() => {
+                        navigateToSection("portfolio");
+                        closeMenu();
+                    }}
+                >
                     Portfolio
                 </a>
-                <a className="hover-element" href="#contact" onClick={closeMenu}>
+
+                <a
+                    className="hover-element"
+                    href={`${homeUrl}#contact`}
+                    onClick={() => {
+                        navigateToSection("contact");
+                        closeMenu();
+                    }}
+                >
                     Contact
                 </a>
             </nav>

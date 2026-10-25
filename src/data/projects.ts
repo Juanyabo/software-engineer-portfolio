@@ -55,13 +55,13 @@ export const academicProjects = [
         name: "Talent Tree",
         focus: "UI",
         technologies: ["Unreal Engine 5", "UMG", "C++", "Blueprints"],
-        link: ""
+        link: "https://github.com/Juanyabo/TalentTree"
     },
     {
         name: "Physics Sandbox",
         focus: "Physics",
         technologies: ["Unreal Engine 5", "Chaos Physics", "UMG" ,"C++", "Blueprints"],
-        link: ""
+        link: "https://github.com/Juanyabo/Unreal-Engine-Chaos-Physics"
     },
     {
         name: "Thesis",

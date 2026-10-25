@@ -1,5 +1,6 @@
 import "./Portfolio.css";
 import {featuredProjects, personalProjects, academicProjects} from "../data/projects";
+import { Link } from "react-router-dom";
 
 function Portfolio() {
     return (
@@ -51,9 +52,9 @@ function Portfolio() {
                             {project.credits}
                         </p>
 
-                        <a href={project.link} className="text portfolio-project-link hover-element">
-                            Learn more <span className="portfolio-project-arrow">→</span>
-                        </a>
+                        <Link to={project.link} className="text portfolio-project-link hover-element">
+                            My contributions <span className="portfolio-project-arrow">→</span>
+                        </Link>
                     </div>
                 );
 
@@ -78,7 +79,7 @@ function Portfolio() {
 
             {[
                 { title: "Personal Projects", projects: personalProjects },
-                { title: "Academic Projects", projects: academicProjects }
+                { title: "Featured Academic Projects", projects: academicProjects }
             ].map((category) => (
                 <div className="container portfolio-project-category" key={category.title}>
                     <p className="text eyebrow">{category.title}</p>
