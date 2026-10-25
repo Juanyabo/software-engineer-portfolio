@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation, useNavigationType } from "react-router-dom";
 import { useEffect } from "react";
 import './App.css'
 import Navbar from './components/Navbar'
@@ -7,6 +7,21 @@ import Portfolio from './components/Portfolio'
 import LadyUmbrella from "./components/projetcs/LadyUmbrella";
 import Footer from './components/Footer'
 
+function ScrollToTop() {
+    const { pathname } = useLocation();
+    const navigationType = useNavigationType();
+
+    useEffect(() => {
+        if (navigationType === "POP") return;
+
+        window.scrollTo({
+            top: 0,
+            behavior: "instant"
+        });
+    }, [pathname, navigationType]);
+
+    return null;
+}
 
 function Home() {
 
@@ -52,6 +67,7 @@ function Home() {
 function App() {
     return (
         <BrowserRouter basename={import.meta.env.BASE_URL}>
+            <ScrollToTop />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route

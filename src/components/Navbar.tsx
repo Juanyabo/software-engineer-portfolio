@@ -1,29 +1,41 @@
 import { useState } from 'react'
+import { Link } from "react-router-dom";
 import './Navbar.css'
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
     const closeMenu = () => setMenuOpen(false)
     const homeUrl = import.meta.env.BASE_URL;
-    const navigateToSection = (id: string) => {
+    const navigateToSection = (
+        event: React.MouseEvent<HTMLAnchorElement>,
+        id: string
+    ) => {
         if (window.location.pathname !== homeUrl) {
             sessionStorage.setItem("targetSection", id);
+            return;
         }
+
+        event.preventDefault();
+
+        document.getElementById(id)?.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
     };
 
     return (
         <header className="navbar">
             <div className="container navbar-content">
 
-                <a className="brand navbar-brand" href={homeUrl}>
+                <Link className="brand navbar-brand" to="/">
                     Juan Gianella
-                </a>
+                </Link>
 
                 <nav className="text horizontal-menu navbar-links">
                     <a
                         className="hover-element"
                         href={`${homeUrl}#about`}
-                        onClick={() => navigateToSection("about")}
+                        onClick={(event) => navigateToSection(event, "about")}
                     >
                         About
                     </a>
@@ -31,7 +43,7 @@ function Navbar() {
                     <a
                         className="hover-element"
                         href={`${homeUrl}#portfolio`}
-                        onClick={() => navigateToSection("portfolio")}
+                        onClick={(event) => navigateToSection(event, "portfolio")}
                     >
                         Portfolio
                     </a>
@@ -40,7 +52,7 @@ function Navbar() {
                 <a
                     className="text navbar-contact"
                     href={`${homeUrl}#contact`}
-                    onClick={() => navigateToSection("contact")}
+                    onClick={(event) => navigateToSection(event, "contact")}
                 >
                     Contact
                 </a>
@@ -68,8 +80,8 @@ function Navbar() {
                 <a
                     className="hover-element"
                     href={`${homeUrl}#about`}
-                    onClick={() => {
-                        navigateToSection("about");
+                    onClick={(event) => {
+                        navigateToSection(event, "about");
                         closeMenu();
                     }}
                 >
@@ -79,8 +91,8 @@ function Navbar() {
                 <a
                     className="hover-element"
                     href={`${homeUrl}#portfolio`}
-                    onClick={() => {
-                        navigateToSection("portfolio");
+                    onClick={(event) => {
+                        navigateToSection(event, "portfolio");
                         closeMenu();
                     }}
                 >
@@ -90,8 +102,8 @@ function Navbar() {
                 <a
                     className="hover-element"
                     href={`${homeUrl}#contact`}
-                    onClick={() => {
-                        navigateToSection("contact");
+                    onClick={(event) => {
+                        navigateToSection(event, "contact");
                         closeMenu();
                     }}
                 >
