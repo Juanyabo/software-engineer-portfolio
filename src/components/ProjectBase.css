@@ -56,3 +56,73 @@
 .project-contributions-title {
     margin-top: 48px;
 }
+
+.project-contributions {
+    margin-top: 48px;
+}
+
+.project-section:not(:last-child) {
+    margin-bottom: 64px;
+}
+
+.project-section .portfolio-meta {
+    margin: 0 0 48px;
+    font-size: 18px;
+}
+
+.project-section-media {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.project-row {
+    display: grid;
+    gap: 24px;
+    width: 100%;
+}
+
+.project-row img,
+.project-row video {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+}
+
+.project-row img:hover,
+.project-row video:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.project-row:has(> :only-child) > :only-child {
+    grid-column: 1 / -1;
+    width: calc((100% - 24px) / 2);
+    justify-self: center;
+}
+
+.project-descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project-description {
+    margin: 0;
+    text-align: justify;
+}
+
+.project-description strong {
+    color: var(--color-primaryText);
+}

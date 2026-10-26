@@ -1,5 +1,6 @@
 import ProjectBase from "../ProjectBase";
 import { featuredProjects } from "../../data/projects";
+import { contributions } from "../../data/details/ladyUmbrella"
 
 const ladyUmbrella = featuredProjects.find(
     project => project.title === "Lady Umbrella"
@@ -18,9 +19,9 @@ function LadyUmbrella() {
                 src: "https://www.youtube-nocookie.com/embed/X_DgUlOjEhE",
                 title: "Lady Umbrella - Official Trailer"
             }}
-        >
-            {/* Contributions */}
-        </ProjectBase>
+            contentTitle="My contributions"
+            sections={contributions}
+        />
     );
 }
 
