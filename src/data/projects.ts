@@ -67,6 +67,6 @@ export const academicProjects = [
         name: "Thesis",
         focus: "Engineering",
         technologies: ["Python", "Tkinter" , "Matplotlib", "Pandas", "NumPy"],
-        link: ""
+        link: "/portfolio/thesis"
     }
 ];

@@ -96,9 +96,19 @@ function Portfolio() {
                             <div className="portfolio-table-row divider" key={project.name}>
                                 <span className="text portfolio-table-name">
                                     {project.link ? (
-                                        <a href={project.link} target="_blank" rel="noopener noreferrer">
-                                            {project.name}
-                                        </a>
+                                        project.link.startsWith("/") ? (
+                                            <Link to={project.link}>
+                                                {project.name}
+                                            </Link>
+                                        ) : (
+                                            <a
+                                                href={project.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                {project.name}
+                                            </a>
+                                        )
                                     ) : (
                                         project.name
                                     )}

@@ -83,6 +83,10 @@
     gap: 32px;
 }
 
+.project-row:empty {
+    display: none;
+}
+
 .project-row {
     --project-media-gap: 24px;
     display: grid;
