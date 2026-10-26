@@ -136,3 +136,43 @@ export const contributions = [
         ]
     }
 ];
+
+export const config = {
+    media: {
+        type: "youtube" as const,
+        src: "https://www.youtube-nocookie.com/embed/X_DgUlOjEhE",
+        title: "Lady Umbrella - Official Trailer"
+    },
+
+    contentTitle: "My contributions",
+
+    technologiesTitle: "Tech Stack",
+    technologies: [
+        "Unreal Engine 5",
+        "C++",
+        "UMG",
+        "Blueprints"
+    ],
+
+    repositoryTitle: "Repository",
+    repository: {
+        label: "GitHub",
+        url: "https://github.com/Juanyabo/Lady-Umbrella"
+    },
+
+    projectDetailsTitle: "Project Details",
+    projectDetails: [
+        {
+            label: "Studio",
+            value: "Zulo Interactive"
+        },
+        {
+            label: "Genre",
+            value: "3D action-adventure shooter"
+        },
+        {
+            label: "Platform",
+            value: "Steam"
+        }
+    ]
+};

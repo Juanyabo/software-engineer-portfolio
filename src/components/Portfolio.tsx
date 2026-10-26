@@ -89,7 +89,7 @@ function Portfolio() {
                         <div className="portfolio-table-header text eyebrow portfolio-title-name divider">
                             <span>Name</span>
                             <span>Focus</span>
-                            <span>Technologies</span>
+                            <span>Tech Stack</span>
                         </div>
 
                         {category.projects.map((project) => (
