@@ -34,7 +34,7 @@ export const personalProjects = [
         name: "RPG Mechanics",
         focus: "Video Game",
         technologies: ["Unreal Engine 5", "GAS", "UMG" ,"C++", "Blueprints"],
-        link: ""
+        link: "/portfolio/rpg-mechanics"
     },
     {
         name: "Untilted",
