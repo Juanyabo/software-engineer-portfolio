@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
+import OnshindoOsaka from './components/projetcs/OnshindoOsaka'
 import LadyUmbrella from "./components/projetcs/LadyUmbrella";
 import RPGMechanics from "./components/projetcs/RPGMechanics"
 import Thesis from "./components/projetcs/Thesis";
@@ -76,6 +77,7 @@ function App() {
                     path="/portfolio/lady-umbrella"
                     element={<LadyUmbrella />}
                 />
+                <Route path="/portfolio/onshindo-osaka-spatial4" element={<OnshindoOsaka />} />
                 <Route path="/portfolio/rpg-mechanics" element={<RPGMechanics />} />
                 <Route path="/portfolio/thesis" element={<Thesis />} />
             </Routes>

@@ -15,12 +15,17 @@ export const config = {
             title: "Interactive Structure Modeling",
             rows: [
                 {
-                    media: [structureCreation, structureEditing],
+                    media: [structureCreation],
                     descriptions: [
                         {
                             title: "Structure Creation",
                             text: "Built an interactive desktop interface for creating 2D truss structures by defining nodes, coordinates, support conditions, and connecting bars."
-                        },
+                        }
+                    ]
+                },
+                {
+                    media: [structureEditing],
+                    descriptions: [
                         {
                             title: "Structure Editing",
                             text: "Added tools for modifying existing nodes and bars, allowing users to adjust structural configurations without rebuilding them from scratch."

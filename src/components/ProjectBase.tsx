@@ -23,6 +23,7 @@ interface ProjectSection {
 
 interface ProjectBaseProps {
     title: string;
+    className?: string;
     meta: string;
     description: string;
     media?: ProjectMedia;
@@ -47,6 +48,7 @@ interface ProjectBaseProps {
 
 function ProjectBase({
     title,
+    className,
     meta,
     description,
     media,
@@ -77,7 +79,7 @@ function ProjectBase({
         <>
             <Navbar />
 
-            <main className="project-base">
+            <main className={`project-base ${className ?? ""}`}>
                 <div className="container">
 
                     <div className="project-breadcrumb">

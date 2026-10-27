@@ -1,0 +1,14 @@
+.onshindo-osaka .project-media {
+    aspect-ratio: auto;
+}
+
+
+.onshindo-osaka .project-row img,
+.onshindo-osaka .project-row video {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background-color: #000;
+    border-radius: 8px;
+}
