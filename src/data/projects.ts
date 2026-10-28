@@ -46,6 +46,12 @@ export const personalProjects = [
 
 export const academicProjects = [
     {
+        name: "Thesis",
+        focus: "Engineering",
+        technologies: ["Python", "Tkinter" , "Matplotlib", "Pandas", "NumPy"],
+        link: "/portfolio/thesis"
+    },
+    {
         name: "Talent Tree",
         focus: "UI",
         technologies: ["Unreal Engine 5", "UMG", "C++", "Blueprints"],
@@ -56,11 +62,5 @@ export const academicProjects = [
         focus: "Physics",
         technologies: ["Unreal Engine 5", "Chaos Physics", "UMG" ,"C++", "Blueprints"],
         link: "https://github.com/Juanyabo/Unreal-Engine-Chaos-Physics"
-    },
-    {
-        name: "Thesis",
-        focus: "Engineering",
-        technologies: ["Python", "Tkinter" , "Matplotlib", "Pandas", "NumPy"],
-        link: "/portfolio/thesis"
     }
 ];
