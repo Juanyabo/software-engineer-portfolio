@@ -32,7 +32,7 @@ export const workExperiences = [
     {
         title: "Gameplay & UI Programmer",
         date: "Jan 2025 – Oct 2025",
-        technologies: "Unreal Engine | C++",
+        technologies: "Unreal Engine | C++ | UMG | Blueprints",
         description: [
             "Implemented the HUD architecture, including widgets and associated logic to display in-game information and player interactions.",
             "Built input device recognition for keyboard, mouse, and gamepad, dynamically updating the UI based on the active input device.",
