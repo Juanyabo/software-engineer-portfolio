@@ -1,10 +1,15 @@
+import handTrackingGrab from "../../assets/gifs/MixedReality/handTrackingGrab.gif";
+import handTrackingRotate from "../../assets/gifs/MixedReality/handTrackingRotate.gif";
+import pokeInteraction from "../../assets/gifs/MixedReality/pokeInteraction.gif";
+import guidedExperience from "../../assets/gifs/MixedReality/guidedExperience.gif";
+import panelInformation from "../../assets/gifs/MixedReality/panelInformation.gif";
 
 export const contributions = [
     {
         title: "Hand Tracking & Object Manipulation",
         rows: [
             {
-                media: [],
+                media: [handTrackingGrab, handTrackingRotate],
                 descriptions: [
                     {
                         title: "Hand-based interaction",
@@ -13,7 +18,7 @@ export const contributions = [
                 ]
             },
             {
-                media: [],
+                media: [pokeInteraction],
                 descriptions: [
                     {
                         title: "Poke interaction",
@@ -27,7 +32,7 @@ export const contributions = [
         title: "Guided Experience Flow",
         rows: [
             {
-                media: [],
+                media: [guidedExperience],
                 descriptions: [
                     {
                         title: "Content placement",
@@ -50,7 +55,7 @@ export const contributions = [
         title: "Dynamic Information Panel",
         rows: [
             {
-                media: [],
+                media: [panelInformation],
                 descriptions: [
                     {
                         title: "Auto-cycling content",

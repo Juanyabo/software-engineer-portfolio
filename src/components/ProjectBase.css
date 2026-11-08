@@ -228,7 +228,16 @@
 }
 
 @media (max-width: 440px) {
-    
+
+    .project-breadcrumb {
+        align-items: flex-start;
+    }
+
+    .project-breadcrumb-name {
+        min-width: 0;
+        text-align: left;
+    }
+
     .project-row {
         grid-template-columns: 1fr !important;
     }
@@ -239,5 +248,9 @@
 
     .project-information-column:has(.project-details) {
         order: -1;
+    }
+
+    .project-description {
+        text-align: left;
     }
 }
