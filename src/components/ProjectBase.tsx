@@ -91,9 +91,8 @@ function ProjectBase({
                             Work
                         </a>
 
-                        <p className="text">
-                            / <span className="project-breadcrumb-name">{title}</span>
-                        </p>
+                        <span className="text">/</span>
+                        <p className="text project-breadcrumb-name">{title}</p>
                     </div>
 
                     <div className="project-intro">

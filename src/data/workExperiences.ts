@@ -4,18 +4,6 @@ import TDSLogo from "../assets/TDSLogo.png";
 
 export const workExperiences = [
     {
-        title: "XR Developer",
-        date: "Aug 2026 – Oct 2026",
-        technologies: "Unity | C#",
-        description: [
-            "Lorem ipsum dolor sit amet.",
-            "Lorem ipsum dolor sit amet."
-        ],
-        logo: Spatial4Logo,
-        link: "https://www.linkedin.com/company/spatial4/",
-        company: "Spatial4"
-    },
-    {
         title: "AR Developer",
         date: "Jan 2026 – May 2026",
         technologies: "Unity | C# | AR Foundation | ARCore | ARKit | MultiSet SDK",

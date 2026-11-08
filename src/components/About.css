@@ -4,9 +4,9 @@
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 72px;
-    align-items: start;
+    align-items: stretch;
 }
 
 .highlight {
@@ -71,14 +71,20 @@
 }
 
 .about-content-right {
-    align-self: center;
+    position: relative;
+    min-height: 0;
+    overflow: hidden;
+    border-radius: 12px;
 }
 
 .about-profile-image {
+    position: absolute;
+    inset: 0;
     display: block;
     width: 100%;
-    height: auto;
-    border-radius: 12px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 55%;
 }
 
 /* Backstory */
@@ -359,8 +365,33 @@
 
     .about-content-right {
         grid-row: 1;
-        width: 60%;
+        position: relative;
+        width: 80%;
+        height: 320px;
+        overflow: hidden;
+        border-radius: 12px;
         justify-self: center;
+    }
+
+    .about-content-right::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("../assets/Hero.png");
+        background-size: cover;
+        background-position: center;
+        filter: blur(20px) brightness(0.5);
+        transform: scale(1.1);
+        z-index: 0;
+    }
+
+    .about-profile-image {
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
     .about-content-left {
@@ -432,8 +463,9 @@
 }
 
 @media (max-width: 440px) {
+    
     .about-content-right {
-        width: fit-content;
+        width: 100%;
     }
 
     .about-highlights {

@@ -2,13 +2,31 @@
     aspect-ratio: auto;
 }
 
-
 .onshindo-osaka .project-row img,
 .onshindo-osaka .project-row video {
     width: 100%;
     height: auto;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: auto;
     object-fit: contain;
-    background-color: #000;
+    background: transparent;
     border-radius: 8px;
+}
+
+/* Vertical media */
+.onshindo-osaka .project-row img:is(
+    [src$=".gif"],
+    [src*="locationsInterface.png"]
+) {
+    width: 20%;
+    max-width: none;
+    justify-self: center;
+}
+
+@media (max-width: 440px) {
+    .onshindo-osaka .project-row img:is(
+        [src$=".gif"],
+        [src*="locationsInterface.png"]
+    ) {
+        width: 40%;
+    }
 }

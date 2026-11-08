@@ -1,19 +1,19 @@
-import googleDeveloperImage from "../assets/androidXRDeveloper.png";
+import androidXRProgramImage from "../assets/androidXRProgram.png";
 import onshindoOsakaImage from "../assets/onshindoOsaka.png";
 import ladyUmbrellaImage from "../assets/ladyUmbrella.png";
 
 export const featuredProjects = [
     {
-        title: "Android XR Program",
-        meta: "XR · Retail",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit provident ullam libero iusto aliquam veritatis.",
+        title: "Android XR Developer Catalyst Program",
+        meta: "Mixed Reality · Retail",
+        description: "Through the Android XR Developer Catalyst Program, I got early access to the XREAL AURA wired XR glasses and built an interactive mixed reality app for them. It gave me a chance to work with XR tech that’s still pretty new and to experiment with mixing virtual content into the real world.",
         credits: "",
-        image: googleDeveloperImage,
-        link: "/portfolio/android-xr-program"
+        image: androidXRProgramImage,
+        link: "/portfolio/mixed-reality"
     },
     {
         title: "Onshindo Osaka Spatial4",
-        meta: "AR · Retail",
+        meta: "Augmented reality · Retail",
         description: "Onshindo Osaka Spatial4 is a multiplatform AR experience launched for the duration of a product marketing campaign across three locations in Zaragoza, Spain. It was developed by Spatial4 to create an interactive brand experience combining location-based technology with augmented reality.",
         credits: "A mobile app by Spatial4 · Onshindo Osaka",
         image: onshindoOsakaImage,
