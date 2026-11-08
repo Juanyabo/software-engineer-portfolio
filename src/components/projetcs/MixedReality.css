@@ -1,0 +1,8 @@
+.mixed-reality .project-media {
+    aspect-ratio: auto;
+}
+
+.mixed-reality .project-media img {
+    height: auto;
+    object-fit: contain;
+}

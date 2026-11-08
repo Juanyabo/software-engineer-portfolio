@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
+import MixedReality from "./components/projetcs/MixedReality";
 import OnshindoOsaka from './components/projetcs/OnshindoOsaka'
 import LadyUmbrella from "./components/projetcs/LadyUmbrella";
 import RPGMechanics from "./components/projetcs/RPGMechanics"
@@ -72,12 +73,19 @@ function App() {
         <BrowserRouter basename={import.meta.env.BASE_URL}>
             <ScrollToTop />
             <Routes>
+                <Route
+                    path="/portfolio/mixed-reality"
+                    element={<MixedReality />}
+                />
                 <Route path="/" element={<Home />} />
+                <Route 
+                    path="/portfolio/onshindo-osaka-spatial4"
+                    element={<OnshindoOsaka />} 
+                />
                 <Route
                     path="/portfolio/lady-umbrella"
                     element={<LadyUmbrella />}
                 />
-                <Route path="/portfolio/onshindo-osaka-spatial4" element={<OnshindoOsaka />} />
                 <Route path="/portfolio/rpg-mechanics" element={<RPGMechanics />} />
                 <Route path="/portfolio/thesis" element={<Thesis />} />
             </Routes>
