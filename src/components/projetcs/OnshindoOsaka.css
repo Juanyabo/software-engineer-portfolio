@@ -15,7 +15,7 @@
 /* Vertical media */
 .onshindo-osaka .project-row img:is(
     [src$=".gif"],
-    [src*="locationsInterface.png"]
+    [src*="locationsInterface"]
 ) {
     width: 20%;
     max-width: none;
@@ -25,7 +25,7 @@
 @media (max-width: 440px) {
     .onshindo-osaka .project-row img:is(
         [src$=".gif"],
-        [src*="locationsInterface.png"]
+        [src*="locationsInterface"]
     ) {
         width: 40%;
     }
