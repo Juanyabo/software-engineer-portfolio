@@ -120,5 +120,19 @@ export const config = {
         "OpenXR",
         "XR Interaction Toolkit",
         "XR Hands",
+    ],
+    projectDetails: [
+        {
+            label: "Company",
+            value: "Spatial4"
+        },
+        {
+            label: "Genre",
+            value: "Beauty"
+        },
+        {
+            label: "Platforms",
+            value: "Android XR"
+        }
     ]
 };

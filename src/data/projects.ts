@@ -6,8 +6,8 @@ export const featuredProjects = [
     {
         title: "Android XR Developer Catalyst Program",
         meta: "Mixed Reality · Retail",
-        description: "Through the Android XR Developer Catalyst Program, I got early access to the XREAL AURA wired XR glasses and built an interactive mixed reality app for them. It gave me a chance to work with XR tech that’s still pretty new and to experiment with mixing virtual content into the real world.",
-        credits: "",
+        description: "Spatial4 Product Discovery is an interactive mixed reality experience built for the launch of the XREAL AURA wired XR glasses and available on Google Play for Android XR in the United States, South Korea, Canada and Japan. It was developed by Spatial4 with early access to the hardware before its public release, as part of the Android XR Developer Catalyst Program, to let users explore a product through hand tracking.",
+        credits: "An Android XR app by Spatial4",
         image: androidXRProgramImage,
         link: "/portfolio/mixed-reality"
     },

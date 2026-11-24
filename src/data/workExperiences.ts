@@ -4,7 +4,22 @@ import TDSLogo from "../assets/TDSLogo.png";
 
 export const workExperiences = [
     {
-        title: "AR Developer",
+        title: "Mixed Reality Developer",
+        date: "Aug 2026 – Oct 2026",
+        technologies: "Unity | C# | Android XR | Android XR Extensions | OpenXR | XR Interaction Toolkit | XR Hands",
+        description: [
+            "Developed an interactive mixed reality application in Unity and C# for XREAL AURA wired XR glasses, working with the hardware before its public release as part of the Android XR Developer Catalyst Program.",
+            "Implemented hand tracking interactions using XR Hands and the XR Interaction Toolkit, including gesture-based grabbing, one- and two-handed movement and rotation, and fingertip poke input to trigger animations and interface buttons.",
+            "Built a step-based guided experience that places content within the user’s view and unlocks each interaction only after the previous one is completed, keeping object animations and on-screen instructions synchronized with progress.",
+            "Created an information panel with automatic and manual topic navigation and fade transitions, editable directly in the Unity editor without code changes.",
+            "Optimized performance on mixed reality hardware with foveated rendering and late latching, and met the requirements to publish the app on the Google Play Store for Android XR."
+        ],
+        logo: Spatial4Logo,
+        link: "https://www.linkedin.com/company/spatial4/",
+        company: "Spatial4"
+    },
+    {
+        title: "Augmented Reality Developer",
         date: "Jan 2026 – May 2026",
         technologies: "Unity | C# | AR Foundation | ARCore | ARKit | MultiSet SDK",
         description: [
