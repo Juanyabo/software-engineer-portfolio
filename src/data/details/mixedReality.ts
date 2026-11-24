@@ -131,7 +131,7 @@ export const config = {
             value: "Beauty"
         },
         {
-            label: "Platforms",
+            label: "Platform",
             value: "Android XR"
         }
     ]
